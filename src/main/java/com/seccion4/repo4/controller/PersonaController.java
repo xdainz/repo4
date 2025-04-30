@@ -32,9 +32,13 @@ public class PersonaController {
         return personaService.listarPersonas();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Persona getPersonaId(@PathVariable int id) {
         return personaService.buscarId(id);
     }
 
+    @GetMapping("/rut/{rut}")
+    public Persona getPersonaRut(@PathVariable String rut) {
+        return personaService.buscarRut(rut);
+    }
 }

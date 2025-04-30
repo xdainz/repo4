@@ -22,7 +22,11 @@ public class PersonaService {
     }
 
     public Persona buscarId(int id) {
-        return personaRepository.read(id);
+        return personaRepository.readId(id);
+    }
+
+    public Persona buscarRut(String rut) {
+        return personaRepository.readRut(rut);
     }
 
 }
