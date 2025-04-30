@@ -13,6 +13,7 @@ public class PersonaRepository {
 
     public Persona create(Persona persona) {
         personas.add(persona);
+        System.out.println(persona);
         return persona;
     }
 
