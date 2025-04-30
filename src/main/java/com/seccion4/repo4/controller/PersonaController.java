@@ -18,11 +18,6 @@ public class PersonaController {
     @Autowired
     private PersonaService personaService;
 
-    @GetMapping
-    public String Saludar() {
-        return "hoal mudno";
-    }
-
     @PostMapping
     public Persona guardar(@RequestBody Persona persona) {
         return personaService.guardarPersona(persona);
